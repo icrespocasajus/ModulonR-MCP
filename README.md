@@ -67,7 +67,7 @@ Configure your MCP client to connect using Streamable HTTP:
 ```json
 {
   "mcpServers": {
-    "modulonr": {
+    "ModulonR-mcp": {
       "url": "http://localhost:2030/mcp"
     }
   }
@@ -103,14 +103,14 @@ The server uses a shared workspace mounted at `/home` in the container:
 ## Implementation
 
 - Programming language: TypeScript (Node.js runtime)
-- Transport: MCP over **Streamable HTTP** (not SSE)
+- Transport: MCP over **Streamable HTTP**
 
 ## Example Workflow
 
 1. Place regulon activity matrix, annotation, regulons, expression matrix, and GRN weights in `workspace/Data/`.
 2. Ask your AI MCP client:
 
-   > "Use ModulonR-mcp to identify modulons from the regulon activity matrix in workspace/Data/, then select the top modulon for CD8_Tex and rank 3-TF knockout combinations."
+   > "Use ModulonR-mcp to identify modulons from the regulon activity matrix in workspace/Data/, then select the top modulon for CD8_Tex and rank single TF knockouts."
 
 ## Port Mappings
 
