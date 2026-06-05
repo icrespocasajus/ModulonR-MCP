@@ -1,0 +1,21 @@
+{
+  "_comment": "ModulonR ModulonPert Configuration Template",
+  "regulons_file": "/home/Data/regulons.Rds",
+  "_regulons_description": "Named list of regulon constituent genes (from SCENIC or similar).",
+  "modulons_file": "/home/Results/modulon_ident_modulons.Rds",
+  "expression_matrix_file": "/home/Data/gene_expression_matrix.Rds",
+  "_expression_matrix_description": "Gene expression matrix (genes in rows, cells in columns).",
+  "annotation_file": "/home/Data/annotation.Rds",
+  "background_classes": null,
+  "target_state": "CD8_Tex",
+  "target_modulon": "3",
+  "_target_modulon_description": "Name/ID of the modulon to perturb (from ModulonSelect results).",
+  "comb_size": 1,
+  "_comb_size_description": "Number of TF knockouts per combination to rank.",
+  "weights_file": "/home/Data/grn_weights.Rds",
+  "_weights_file_description": "Optional TF-target weight data frame (columns: TF, Target, weight). Null uses unit weights.",
+  "generate_plots": true,
+  "_generate_plots_description": "When true (default), save a horizontal barplot of the top TF KO combinations to Results/.",
+  "top_n": 30,
+  "_top_n_description": "Number of top-ranked combinations to include in the barplot (default: 30)."
+}

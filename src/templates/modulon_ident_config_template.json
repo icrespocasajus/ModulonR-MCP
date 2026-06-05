@@ -1,0 +1,19 @@
+{
+  "_comment": "ModulonR ModulonIdent Configuration Template",
+  "activity_matrix_file": "/home/Data/regulon_activity_matrix.Rds",
+  "_activity_matrix_description": "Regulon activity matrix (features in rows, samples/cells in columns). Supports .Rds or tab-separated .txt/.tsv.",
+  "annotation_file": "/home/Data/annotation.Rds",
+  "_annotation_description": "Cell/sample state annotation. Supports .Rds (character vector) or single-column .txt/.tsv.",
+  "background_classes": null,
+  "_background_classes_description": "Classes to use as background in discriminant analysis. Null uses all classes in annotation.",
+  "query_classes": null,
+  "_query_classes_description": "Classes to analyze as query. Null uses all classes in annotation.",
+  "k_range": [2, 10],
+  "_k_range_description": "Clustering resolution (k) values to explore. Two-element [min, max] expands to every integer from min through max (inclusive). Longer arrays are used as an explicit list of k values.",
+  "seed": 42,
+  "_seed_description": "Random seed for reproducible AUCell rankings and background subsampling in discriminant analysis.",
+  "generate_plots": true,
+  "_generate_plots_description": "When true (default), save GDS barplot and modulon heatmap PDFs to Results/.",
+  "state_order": null,
+  "_state_order_description": "Optional column order for the heatmap (cell states). Null uses order of first appearance in the annotation."
+}

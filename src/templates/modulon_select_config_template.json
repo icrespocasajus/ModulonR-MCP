@@ -1,0 +1,12 @@
+{
+  "_comment": "ModulonR ModulonSelect Configuration Template",
+  "activity_matrix_file": "/home/Data/regulon_activity_matrix.Rds",
+  "modulons_file": "/home/Results/modulon_ident_modulons.Rds",
+  "_modulons_description": "Modulons list from run_modulon_ident (modulon_ident_modulons.Rds).",
+  "annotation_file": "/home/Data/annotation.Rds",
+  "background_classes": null,
+  "target_state": ["CD8_Tex"],
+  "_target_state_description": "Cell state(s) for which to select the top discriminant modulon.",
+  "generate_plots": true,
+  "_generate_plots_description": "When true (default), save State Modulon Discriminancy barplot PDF(s) to Results/."
+}
